@@ -1,6 +1,8 @@
 # Portfolio-2
 This is a team profile generator that creates a directory of employees with command line inputs
 
+Video Demo: https://drive.google.com/file/d/15F7Kg0XDMs99exrQg9S_frqoWG-Ww27t/view?usp=sharing
+
 ![Site Screenshot](./website.png)
 
 ---
@@ -28,8 +30,7 @@ Run tests:
 
 ## **Links**
 
-[Deployed application](https://dkim525.github.io/Portfolio-2/)\
-[GitHub repository](https://github.com/dkim525/Portfolio-2)
+[GitHub repository](https://github.com/dkim525/Team-Profile)
 
 ---
 ## **Technologies Used**
