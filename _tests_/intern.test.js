@@ -1,18 +1,17 @@
 const Intern = require("../lib/Intern");
 
-// Test for intern class methods
 describe("Intern", () => {
     describe("getName", () => {
         it("Should return intern's name", () => {
-            let person = new Intern("Thomas");
+            let person = new Intern("Nate");
 
-            expect(person.getName()).toEqual("Thomas");
+            expect(person.getName()).toEqual("Nate");
         })
     });
 
     describe("getId", () => {
         it("Should return intern's ID", () => {
-            let person = new Intern("Fabio", 150);
+            let person = new Intern("Seasn", 150);
 
             expect(person.getId()).toEqual(150);
         })
@@ -20,17 +19,17 @@ describe("Intern", () => {
 
     describe("getEmail", () => {
         it("Should return intern's email address", () => {
-            let person = new Intern("Celso", 800, "pai@gmail.com");
+            let person = new Intern("Adam", 800, "adam@gmail.com");
 
-            expect(person.getEmail()).toEqual("pai@gmail.com");
+            expect(person.getEmail()).toEqual("adam@gmail.com");
         })
     });
 
     describe("getSchool", () => {
         it("Should return the intern's school name", () => {
-            let person = new Intern("Celso", 800, "pai@gmail.com", "University of Awesome");
+            let person = new Intern("Adam", 800, "adam@gmail.com", "University of Wisconsin-Madison");
 
-            expect(person.getSchool()).toEqual("University of Awesome");
+            expect(person.getSchool()).toEqual("University of Wisconsin-Madison");
         })
     });
 

@@ -16,48 +16,57 @@ function generateHTML(data) {
         </header>
         
         <main>
-            <div class="container">
-                <div class="row d-flex justify-content-center justify-content-between box-container">
-                    <div class="col" id="box">
-                        <h3>Manager</h3>
-                        <p>Name: <span>${data[0].name}</span></p>
-                        <p>ID: <span>${data[0].id}</span></p>
-                        <p>Email: <span><a href="mailto: ${data[0].email}" title="Link to email address">${data[0].email}</a></span></p>
-                        <p>Office Number: <span>${data[0].officeNumber}</span></p>
-                    </div>
-                    <div class="col" id="box">
-                        <h3>Engineer</h3>
-                        <p>Name: <span>${data[1].name}</span></p>
-                        <p>ID: <span>${data[1].id}</span></p>
-                        <p>Email: <span><a href="mailto: ${data[1].email}" title="Link to email address">${data[1].email}</a></span></p>
-                        <p>GitHub: <span><a href="https://github.com/${data[1].github}" target="_blank" title="Link to engineer's GitHub profile">${data[1].github}</a></span></p>
-                    </div>
-                    <div class="col" id="box">
-                        <h3>Engineer</h3>
-                        <p>Name: <span>${data[2].name}</span></p>
-                        <p>ID: <span>${data[2].id}</span></p>
-                        <p>Email: <span><a href="mailto: ${data[2].email}" title="Link to email address">${data[2].email}</a></span></p>
-                        <p>GitHub: <span><a href="https://github.com/${data[2].github}" target="_blank" title="Link to engineer's GitHub profile">${data[2].github}</a></span></p>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center justify-content-between box-container">
-                    <div class="col" id="box">
-                        <h3>Intern</h3>
-                        <p>Name: <span>${data[3].name}</span></p>
-                        <p>ID: <span>${data[3].id}</span></p>
-                        <p>Email: <span><a href="mailto: ${data[3].email}" title="Link to email address">${data[3].email}</a></span></p>
-                        <p>School: <span>${data[3].school}</span></p>
-                    </div>
-                    <div class="col" id="box">
-                        <h3>Intern</h3>
-                        <p>Name: <span>${data[4].name}</span></p>
-                        <p>ID: <span>${data[4].id}</span></p>
-                        <p>Email: <span><a href="mailto: ${data[4].email}" title="Link to email address">${data[4].email}</a></span></p>
-                        <p>School: <span>${data[4].school}</span></p>
-                    </div>
-                </div>
-            </div>
-    
+        <div class='row justify-content-center'>
+           <article class='card card-body col-12 col-md-3 m-2 shadow tile' style='width: 20rem'>
+                <h3 class='card-title'>${data[0].name}</h2>
+                <h3 class='card-subtitle'>Manager</h3>
+                <ul class='list'>
+                    <li class='list-group-item'>ID: ${data[0].id}</li>
+                    <li class='list-group-item'>email: <a href='mailto:${data[0].email}'>${data[0].email}</a></li>
+                    <li class='list-group-item'>Office Number: ${data[0].officeNumber}</li>
+                </ul>
+            </article>
+            
+            <article class='card card-body col-12 col-md-3 m-2 shadow tile' style='width: 20rem'>
+                <h3 class='card-title'>${data[1].name}</h2>
+                <h3 class='card-subtitle'>Engineer</h3>
+                <ul class='list'>
+                    <li class='list-group-item'>ID: ${data[1].id}</li>
+                    <li class='list-group-item'>email: <a href='mailto:${data[1].email}'>${data[1].email}</a></li>
+                    <li class='list-group-item'>github: <a href="https://github.com/${data[1].github}" target="_blank" title="Link to engineer's GitHub profile">${data[1].github}</a></li>
+                </ul>
+            </article>
+            
+            <article class='card card-body col-12 col-md-3 m-2 shadow tile' style='width: 20rem'>
+                <h3 class='card-title'>${data[2].name}</h2>
+                <h3 class='card-subtitle'>Engineer</h3>
+                <ul class='list'>
+                    <li class='list-group-item'>ID: ${data[2].id}</li>
+                    <li class='list-group-item'>email: <a href='mailto:${data[2].email}'>${data[2].email}</a></li>
+                    <li class='list-group-item'>github: <a href="https://github.com/${data[2].github}" target="_blank" title="Link to engineer's GitHub profile">${data[2].github}</a></li>
+                </ul>
+            </article>
+
+            <article class='card card-body col-12 col-md-3 m-2 shadow tile' style='width: 20rem'>
+                <h3 class='card-title'>${data[3].name}</h2>
+                <h3 class='card-subtitle'>Intern</h3>
+                <ul class='list'>
+                    <li class='list-group-item'>ID: ${data[3].id}</li>
+                    <li class='list-group-item'>email: <a href='mailto:${data[3].email}'>${data[3].email}</a></li>
+                    <li class='list-group-item'>college: ${data[3].school}</li>
+                </ul>
+            </article>
+
+            <article class='card card-body col-12 col-md-3 m-2 shadow tile' style='width: 20rem'>
+                <h3 class='card-title'>${data[4].name}</h2>
+                <h3 class='card-subtitle'>Intern</h3>
+                <ul class='list'>
+                    <li class='list-group-item'>ID: ${data[4].id}</li>
+                    <li class='list-group-item'>email: <a href='mailto:${data[4].email}'>${data[4].email}</a></li>
+                    <li class='list-group-item'>college: ${data[4].school}</li>
+                </ul>
+            </article>
+        </div>
         </main>
         
     </body>

@@ -1,7 +1,7 @@
 # Team Profile Generator
 This is a team profile generator that creates a directory of employees with command line inputs
 
-Video Demo: https://drive.google.com/file/d/15F7Kg0XDMs99exrQg9S_frqoWG-Ww27t/view?usp=sharing
+Video Demo: https://drive.google.com/file/d/1vNF2Td-rHttThvXOX6k7c8uK08WzMd7b/view?usp=sharing
 
 ![Site Screenshot](./website.png)
 
